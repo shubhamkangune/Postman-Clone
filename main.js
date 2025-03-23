@@ -25,7 +25,7 @@ let parametersBox = document.getElementById('parametersBox');
 let paramesRadio = document.getElementById('paramesRadio')
 paramesRadio.addEventListener('click',()=>{
     document.getElementById('requestJsonBox').style.display = 'none'
-    document.getElementById('parametersBox').style.display = 'blockl'
+    document.getElementById('parametersBox').style.display = 'block'
 })
 
 // if the user clicks the json box, hide the params box
@@ -37,7 +37,7 @@ jsonRadio.addEventListener('click',()=>{
 
 })
 
-
+// if the user click the + button,add more parameters and if the user click the - button remove the parameters
 let addParam = document.getElementById('addParam');
 addParam.addEventListener('click',()=>{
     console.log("user click the addParam button");
@@ -90,3 +90,9 @@ addParam.addEventListener('click',()=>{
 
 // if the user click the submit button 
 let submit = document.getElementById('submit');
+submit.addEventListener('click',()=>{
+    let responceJsonText = document.getElementById('responceJsonText');
+    responceJsonText.value = "Please Wait . . . Fetching Responce . . ."
+    console.log("please wait responce for user");
+    
+})
